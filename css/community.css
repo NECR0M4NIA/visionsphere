@@ -1,0 +1,82 @@
+
+.community-section {
+    padding: 40px 20px;
+    font-family: "Space Grotesk";
+}
+
+.forum-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.forum-container h2 {
+    font-family: "Space Grotesk";
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.forum-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.forum-category {
+    background: linear-gradient(180deg, purple, rgb(33, 33, 33));
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5), inset 0 0 10px rgba(0, 0, 0, 0.5);
+    border-style: solid;
+    border-width: 3px;
+
+}
+
+.forum-category h3 {
+    color: white;
+    font-family: "Space Grotesk";
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.forum-topics {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.forum-topic {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forum-topic:last-child {
+    border-bottom: none;
+}
+
+.topic-title {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5), 0 0 8px rgb(19, 127, 194);
+}
+
+.topic-title:hover {
+    color: #1f4f6f;
+    text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.topic-stats {
+    font-size: 0.9em;
+    color: #ffffff;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}

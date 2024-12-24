@@ -19,8 +19,8 @@ body {
     background: linear-gradient(180deg, purple, rgb(33, 33, 33));
     border-radius: 10px;
     overflow: hidden;
-    transition: transform 0.3s ease;
     box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
 }
 
 .top-artists-heading {
@@ -28,7 +28,8 @@ body {
 }
 
 .gallery-item:hover {
-    transform: translateY(-5px) scale(1.01);
+    transform: translateY(-5px) scale(1.01) rotate(-2deg);
+    box-shadow: 14px 18px 0px rgba(0, 0, 0, 0.4);
 }
 
 .gallery-item img {
