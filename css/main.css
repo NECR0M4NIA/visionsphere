@@ -4,8 +4,20 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: linear-gradient(180deg, black, purple);
+}
+
+hr {
+    border-color: white;
+    width: 25%;
+    border-radius: 100%;
+    border-width: 3px;
+    box-shadow: 0 2px 2px black;
 }
 
 .navbar{
@@ -86,8 +98,21 @@ body {
 .hero-logo {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
     filter: drop-shadow(12px 12px 0px rgba(0, 0, 0, 0.5));
+    animation: logo-animation 2.5s infinite ease-in-out;
+}
+
+@keyframes logo-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+        filter: drop-shadow(16px 16px 0px rgba(0, 0, 0, 0.75));
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .hero-section {
@@ -98,6 +123,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 h1 {
@@ -114,4 +141,25 @@ h1 {
     font-family: "Space Grotesk";
     text-align: center;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+.footer-container {
+    padding: 20px;
+    background: linear-gradient(180deg, purple, rgb(33, 33, 33));
+    box-shadow: inset 0px 0px 32px black, 0px -2px 32px black, 0px -14px 64px purple;
+    font-family: "Space Grotesk";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-links {
+    margin: 0 12px;
+    color: white;
+    transition: color 0.1s ease-in-out;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.footer-links:hover {
+    color: chocolate;
 }

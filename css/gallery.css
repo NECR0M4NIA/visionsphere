@@ -1,0 +1,86 @@
+body {
+    font-family: "Space Grotesk";
+}
+
+.gallery-section {
+    padding: 2rem;
+    margin: 64px 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    background: linear-gradient(180deg, purple, rgb(33, 33, 33));
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+.top-artists-heading {
+    font-size: 4.25em;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px) scale(1.01);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+}
+
+.artwork-info {
+    padding: 1.5rem;
+}
+
+.artwork-info h3 {
+    color: #fff;
+    margin: 0 0 0.5rem 0;
+    font-family: "Space Grotesk";
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.artwork-info .artist {
+    color: #888;
+    margin: 0 0 1rem 0;
+    font-size: 0.9rem;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.stats span {
+    display: flex;
+    align-items: center;
+}
+
+.stats i {
+    color: #666;
+}
+
+.rating {
+    margin-left: auto;
+}
+
+.rating i {
+    color: #ffd700;
+    font-size: 0.9rem;
+}
+
+.rating span {
+    margin-left: 0.5rem;
+    color: #fff;
+}
